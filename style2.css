@@ -1,0 +1,156 @@
+/*The body on the second page is essentially the same thing on all 7 pages to be consistently keeping the pages neat*/
+body{
+background-color: #24180e;
+background-size: 400% 400%;
+width:100%;
+text-align:center; 
+font-size: 3vw;
+margin: auto;
+}
+/*Responsive allows the screen to be responding to any size of a device*/
+.responsive {
+  width: 15%;
+  height: auto;
+}
+/*NeonText is a css effect I used to make the title stand out better. Green is aligned with the colour palette*/
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #1b5e20,
+      0 0 82px #1b5e20,
+      0 0 92px #1b5e20,
+      0 0 102px #1b5e20,
+      0 0 151px #1b5e20;
+}
+/* h1 class on the second page is the big title wording. This is the title of the second page*/
+h1{
+    color:#1b5e20;
+    font-size:5vw;
+    font-family:'Playfair Display', serif; 
+}
+/* paragraph class is for writing extensively long sentences that I wanted to not be such a large text nor a small text*/
+p{
+    color:#F2EDDC;
+    font-size:2vw;
+    font-family: 'Playfair Display', serif;
+}
+/*This is the navigation bar that is displayed at the top*/
+.topnav {
+  background-color:black;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #F2EDDC;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family:'Instrument Serif', serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #a38a6a;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #17be61;
+  color: white;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #F2EDDC;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #17be61;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* The slidshow class includes and active class to keep the slideshow actively running*/
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px;}
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #a8835d;
+  color: #000000;
+  font-family: 'Instrumental Serif', serif;
+  cursor: pointer;
+  padding: 10px;
+  width: 60%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #F2EDDC;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #d8c3a5;
+  display: none;
+  overflow: hidden;
+}

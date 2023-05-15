@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fashion of Dark Academia</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="style2.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="index2.html">Fashion</a>
+        <a href="index3.html">Subjects</a>
+        <a href="index4.html">Gallery</a>
+        <a href="index5.html">Form</a>
+        <a href="index6.html">Sources</a>
+        <a href="index7.html">Entertainment</a>
+            </div>
+         <div class="container">
+         <h1 class="neonText">Fashion and Style of Dark Academia</h1>
+        </div>
+    <p>The following contains: visual slideshow, FAQ, and two embedded websites.</p>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="fashion.jfif" style="width:40%">
+  <div class="text">Dark Academia style is all about recreating the fashion from the Victorian era. You'll want neutral colours</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="fashion2.jfif" style="width:50%">
+  <div class="text">For women, you can choose between long skirts or knee-length skirts. If you choose a skirt, pair will a monochromatic coloured sweater and trenchcoat with some dark boots. Accessories are always optional. Minimal not overkill.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="fashion3.jfif" style="width:50%">
+  <div class="text">For everyone, here are basics: pocketwatch or classic wrist watch, books, trenchcoats, turtlenecks, loafers, oxfords and trousers of a solid colour. We like to additionally add a crossbody bag or a messenger bag. It adds to the look and essentially completes the look.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="fashion4.jfif" style="width:50%">
+  <div class="text">For men, you'll want to usually wear trousers and a turtleneck. They can be the same colour if you desire or wear a black turtleneck and beige like trousers. For your shoes, converse are accepted. Loafers, boots, oxfords, combat boots and derbies are must haves.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="fashion5.jfif" style="width:50%">
+  <div class="text">Here is an example outfit. They have a red sweater paired with beige trousers and a grey trenchcoat with a light brown messenger bag. The white collared shirt and red tie are optional. We can see they're essentially embodying the aesthetic very well.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="fashion6.jfif" style="width:50%">
+  <div class="text">Finally, if you watched the movie that inspired the aesthetic, you can always pull inspiration from what ever you like to watch. You can wear trenchcoats and trousers and turtlenecks or sweaters. The point is just to envision the English Victorian Era. If you're not sure how to properly dress, always use your references and google outfits.</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
+</script>
+<br>
+<p>Commonly asked questions regarding fashion of Dark Academia:</p>
+<p>Click each question to reveal the answer</p>
+<button class="accordion">How would you describe Dark Academia fashion?</button>
+<div class="panel">
+  <p>It's a preppy like Victorian era England style that reminds people often of Ivy League schools. The style reminds me of the last decades of the nineteenth century up until the 1940s.</p>
+</div>
+
+<button class="accordion">What's the difference between Light Academia and Dark Academia?</button>
+<div class="panel">
+  <p>Light Academia is an academic aesthetic and the visually lighter counterpart of Dark Academia. Dark Academia typically involves intense and negative themes, including literary tragedy, existentialism, heartbreak, oppression, substance abuse, depression, and death. Think of it as positive and optimistic vs negative and pessimistic.</p>
+</div>
+
+<button class="accordion">What are the main colours of Dark Academia besides black?</button>
+<div class="panel">
+  <p>The color palette of Dark Academia can best be described as prep school meets Gothic design. It consists mainly of black, white, dark brown, navy blue, forest green, and burgandy. These are sometimes contrasted with lighter colors, like orange, gold, and cream.</p>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<p>Here are two websites to refer to</p>
+<iFrame width="550px" height="350px"src="https://themoodpalette.com/dark-academia-fashion/"></iFrame>
+<iFrame width="550px" height="350px"src="https://hollyhabeck.com/2022/01/22/where-to-buy-dark-academia-clothes/"></iFrame>
+<p>Here is a video to watch that will recommmend and explain if you're an auditory learner:</p>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qfs_OtMqwiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

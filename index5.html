@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="style5.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Castoro+Titling&family=Instrument+Serif&family=Playfair+Display&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        text-align:center;
+        font-size:4vw;
+        font-family: 'Tangerine', cursive;
+        background:#321f19;
+        color:#F2EDDC;
+         }
+         input[type=radio] {
+            accent-color: ForestGreen;
+         }
+         input[type=text] {
+        background-color: #F2EDDC;
+        color: White;
+      }
+        input[type=checkbox]{
+          accent-color: #00234B;
+      }
+      select {
+        width: 50%;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color:#8B0000;
+        color:#F2EDDC;
+      }
+      input[type=button], input[type=submit], input[type=reset] {
+        background-color: #7D2827;
+        border: none;
+        color: White;
+        padding: 9px 9px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+</style>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="index2.html">Fashion</a>
+        <a href="index3.html">Subjects</a>
+        <a href="index4.html">Gallery</a>
+        <a href="index5.html">Form</a>
+        <a href="index6.html">Sources</a>
+        <a href="index7.html">Entertainment</a>
+            </div>
+        <div class="container">
+    <h1 class="neonText">Contact Form</h1>
+<form id="myForm">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br></br>
+ 
+  <label for= "describe">What did you like?</label><br>
+  <textarea name="comments" id="comments" style="width:56%;height:90px;padding:2%;font-size:1.2em;background-color:#F2EDDC;" rows="4" cols= "50" id="describe" name="describe"></textarea><br><br>
+  
+  <label for= "describe">What could I have done better?</label><br>
+  <textarea name="comments" id="comments" style="width:56%;height:90px;padding:2%;font-size:1.2em;background-color:#F2EDDC;"rows="4" cols= "50" id="describe" name="describe"></textarea><br><br>
+ 
+  <label for="choosePage">Choose your favourite page:</label><br>
+  <select id= "choosePage">
+      <option value= "Home">Home page</option>
+      <option value= "Fashion">Fashion</option>
+      <option value= "Subjects">Subjects</option>
+      <option value= "Gallery">Gallery</option>
+      <option value="Entertainment">Entertainment</option>
+  </select> <br>
+ 
+  <p>Choose your favorite subject</p>
+  <input type= "radio" id="subject1" name="favSubject" value="HTML">
+  <label for="subject1">Arts</label>
+  <input type="radio" id="subject2" name="favSubject" value= "HTML">
+  <label for="subject2">Math</label> 
+  <input type="radio" id="subject3" name="favSubject" value="HTML">
+  <label for="subject3">History</label>
+  <input type="radio" id="subject4" name="favSubject" value="HTML">
+  <label for="subject4">Science</label>
+  <input type="radio" id="subject5" name="favSubject" value="HTML">
+  <label for="subject5">Sports</label>
+  <input type="radio" id="subject6" name="favSubject" value="HTML">
+  <label for="subject6">Other</label>
+ </br>
+  <br>Favorite weather<br>
+    <input type="checkbox" id="weather1" name="weather1" value= "Sunny">
+    <label for= "weather1">Sunny</label><br>
+    <input type="checkbox" id="weather2" name="weather2" value= "Stormy">
+    <label for= "weather2">Stormy</label>
+    <input type="checkbox" id="weather3"name="weather3" value="Foggy">
+    <label for="weather3">Foggy</label>
+    <input type="checkbox" id="weather4" name="weather4" value="Other">
+    <label for="weather4">Other</label>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<div id="formContentsHere"></div>
+<script>
+    var form=document.getElementById("myForm");
+    form.addEventListener("submit", function(event){
+    event.preventDefault();
+    var name= document.getElementById("name").value;
+   
+    var formContents=document.getElementById("formContents");
+    formContents.innerHTML="Your Name Is" + name;
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body{
+background-color: #24180e;
+background-size: 400% 400%;
+width:100%;
+text-align:center; 
+font-size: 3vw;
+margin: auto;
+}
+.responsive {
+  width: 15%;
+  height: auto;
+}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #F2EDDC;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family:'Instrument Serif', serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #a38a6a;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #17be61;
+  color: white;
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #17be61,
+      0 0 82px #17be61,
+      0 0 92px #17be61,
+      0 0 102px #17be61,
+      0 0 151px #17be61;
+}
+h1{
+    color:#17be61;
+    font-size: 5vw;
+    font-family: 'Instrument Serif', serif;
+}
+p{
+    color: #F2EDDC;
+    font-size:2vw;
+    font-family: 'Bodoni Moda', serif;
+}
+h4{
+    color: #F2EDDC;
+    font-size: 2vw;
+    font-family: 'Playfair Display', serif;
+}
+a{
+    color:#F2EDDC;
+    font-size:2vw;
+    font-family:'Playfair Display', serif;
+}

@@ -1,0 +1,155 @@
+/*The body is the foundation of the website like colour and text sizes*/
+body{
+    background-color:#36220b;
+    background-size: 400% 400%;
+    width:100%;
+    text-align:center; 
+    font-size: 3vw;
+    margin: auto;
+}
+/*The h2 class is for the page wording size. I used several to make the text big and readable */
+.h2{
+    color: #fbcd52;
+    font-size: 2vw;
+    font-family:'Great Vibes', cursive;
+}
+/*The h1 class is probably the most important because it's the title of the home page */
+h1{
+    color: #F2EDDC;
+    font-size: 5vw;
+    font-family: 'Instrument Serif', serif;
+}
+/*In order for the website to load onto other devices, I put a responsive class to make sure the website can fit any screen*/
+.responsive {
+  width: 15%;
+  height: auto;
+}
+/*Headers are important because they're the outline*/
+.header{
+    color:#F2EDDC;
+    font-family: 'Instrument Serif', serif;
+}
+/* I also put in the header another h2 class. However, this font family, colour, and font size are completely different from the first h2 class*/
+h2{
+     font-family: 'Instrument Serif', serif;
+     font-size:3vw;
+     color: #F2EDDC;
+     text-align: center;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  font-family:'Instrument Serif', serif;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #17be61;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*The nav bar portion is black for contrast. We can see the topnav stand out from the body colour*/
+.topnav {
+  background-color:black;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #F2EDDC;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family:'Instrument Serif', serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #a38a6a;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #17be61;
+  color: white;
+}

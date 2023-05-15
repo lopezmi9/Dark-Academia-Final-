@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Academic Subjects</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="style3.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Castoro+Titling&family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="index2.html">Fashion</a>
+        <a href="index3.html">Subjects</a>
+        <a href="index4.html">Gallery</a>
+        <a href="index5.html">Form</a>
+        <a href="index6.html">Sources</a>
+        <a href="index7.html">Entertainment</a>
+            </div>
+            <div class="container">
+    <h1 class="neonText">Academic subjects</h1>
+    <p>On this page, we'll introduce multiple subjects/hobbies in Dark Academia</p>
+  <div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="subject.jfif" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="subject2.jfif" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="subject3.jfif" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="subject4.jfif" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="subject5.jfif" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="subject6.jfif" style="width:50%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="subject.jfif" style="width:100%" onclick="currentSlide(1)" alt="Reading">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="subject2.jfif" style="width:100%" onclick="currentSlide(2)" alt="Arts">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="subject3.jfif" style="width:100%" onclick="currentSlide(3)" alt="Writing">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="subject4.jfif" style="width:100%" onclick="currentSlide(4)" alt="Art museums and History Museums">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="subject5.jfif" style="width:100%" onclick="currentSlide(5)" alt="Calligraphy">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="subject6.jfif" style="width:100%" onclick="currentSlide(6)" alt="Architecture">
+    </div>
+  </div>
+</div>
+<!--This is the script tag for all the slides-->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br>
+<p>What you're browsing through is a small visual of what each hobby/subject can look like.</p>
+<div>
+<br>
+<p>Below is an embedded website for the history of gothic architecture.</p> 
+<p><b>You don't have to read everything in there.<b></p>
+<iframe width="1000px" height="600px" src="https://www.iconeye.com/design/a-brief-history-of-gothic-architecture#:~:text=The%20Gothic%20style%20of%20architecture,cavernous%20spaces%20and%20expansive%20walls."></iframe>
+<div>
+<br>
+<p>Here are two famous books that have the theme of Dark Academia:</p>
+<table>
+  <tr>
+    <th>Publication Date</th>
+    <th>Title</th>
+    <th>Author</th>
+  </tr>
+  <tr>
+    <td>1992</td>
+    <td>The Secret History</td>
+    <td>Donna Tartt</td>
+  </tr>
+  <tr>
+    <td>2017</td>
+    <td>If We Were Villians</td>
+    <td>M.L Rio</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
